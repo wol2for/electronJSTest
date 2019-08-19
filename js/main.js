@@ -163,16 +163,16 @@
           "px)"
       );
       //set modalHeader width
-      self.modalHeader.setAttribute("style", "width:" + eventWidth + "px");
+      self.modalHeader.setAttribute("style", "width:" + 30 + "%");
       //set modalBody left margin
-      self.modalBody.setAttribute("style", "margin-left:" + eventWidth + "px");
+      self.modalBody.setAttribute("style", "margin-left:" + 30 + "%");
       //change modalBodyBg height/width ans scale it
       self.modalBodyBg.setAttribute(
         "style",
-        "height:" + eventHeight + "px; width: 1px; transform: scaleY(" + HeaderBgScaleY + ") scaleX(" + BodyBgScaleX + ")"
+        "height:" + eventHeight + "px; width: 1px; transform: scaleY(" + HeaderBgScaleY + ") scaleX(" + (BodyBgScaleX + 250) + ")"
       );
       //change modal modalHeaderBg height/width and scale it
-      self.modalHeaderBg.setAttribute("style", "height: " + eventHeight + "px; width: " + eventWidth + "px; transform: scaleY(" + HeaderBgScaleY + ")");
+      self.modalHeaderBg.setAttribute("style", "height: " + eventHeight + "px; width: " + 100 + "%; transform: scaleY(" + HeaderBgScaleY + ")");
 
       self.modalHeaderBg.addEventListener("transitionend", function cb() {
         //wait for the  end of the modalHeaderBg transformation and show the modal content
@@ -302,14 +302,14 @@
         );
         //change modal modalBodyBg height/width
         self.modalBodyBg.style.height = modalHeight + "px";
-        self.modalBodyBg.style.transform = "scaleY(1) scaleX(" + BodyBgScaleX + ")";
+        self.modalBodyBg.style.transform = "scaleY(1) scaleX(" + (BodyBgScaleX + 250) + ")";
         self.modalBodyBg.style.width = "1px";
         //set modalHeader width
-        self.modalHeader.setAttribute("style", "width:" + eventWidth + "px");
+        self.modalHeader.setAttribute("style", "width:" + 30 + "%");
         //set modalBody left margin
-        self.modalBody.setAttribute("style", "margin-left:" + eventWidth + "px");
+        self.modalBody.setAttribute("style", "margin-left:" + 30 + "%");
         //change modal modalHeaderBg height/width and scale it
-        self.modalHeaderBg.setAttribute("style", "height: " + eventHeight + "px;width:" + eventWidth + "px; transform:scaleY(" + HeaderBgScaleY + ");");
+        self.modalHeaderBg.setAttribute("style", "height: " + eventHeight + "px;width:" + 100 + "%; transform:scaleY(" + HeaderBgScaleY + ");");
       }, 10);
 
       setTimeout(function() {

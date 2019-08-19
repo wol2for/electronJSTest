@@ -12,7 +12,7 @@ function createWindow() {
     }
   });
 
-  //win.removeMenu();
+  win.removeMenu();
   //dialog.showMessageBoxSync(win, { type: "error", title: "Title!!", detail: "msg body" });
   win.webContents.openDevTools();
   win.loadFile("index.html");
