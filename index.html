@@ -1,194 +1,245 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./home.css">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
 </head>
 
 <body>
+  <!-- <div class="title-bar">
 
-  <body>
-    <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
-      <div class="cd-schedule__timeline">
-        <ul>
-          <li><span>09:00</span></li>
-          <li><span>09:10</span></li>
-          <li><span>09:20</span></li>
-          <li><span>09:30</span></li>
-          <li><span>09:40</span></li>
-          <li><span>09:50</span></li>
-          <li><span>10:00</span></li>
-          <li><span>10:10</span></li>
-          <li><span>10:20</span></li>
-          <li><span>10:30</span></li>
-          <li><span>10:40</span></li>
-          <li><span>10:50</span></li>
-          <li><span>11:00</span></li>
-          <li><span>11:10</span></li>
-          <li><span>11:20</span></li>
-          <li><span>11:30</span></li>
-          <li><span>11:40</span></li>
-          <li><span>11:50</span></li>
-          <li><span>12:00</span></li>
-          <li><span>12:10</span></li>
-          <li><span>12:20</span></li>
-          <li><span>12:30</span></li>
-          <li><span>12:40</span></li>
-          <li><span>12:50</span></li>
-          <li><span>13:00</span></li>
-          <li><span>13:10</span></li>
-          <li><span>13:20</span></li>
-          <li><span>13:30</span></li>
-          <li><span>13:40</span></li>
-          <li><span>13:50</span></li>
-          <li><span>14:00</span></li>
-          <li><span>14:10</span></li>
-          <li><span>14:20</span></li>
-          <li><span>14:30</span></li>
-          <li><span>14:40</span></li>
-          <li><span>14:50</span></li>
-          <li><span>15:00</span></li>
-          <li><span>15:10</span></li>
-          <li><span>15:20</span></li>
-          <li><span>15:30</span></li>
-          <li><span>15:40</span></li>
-          <li><span>15:50</span></li>
-          <li><span>16:00</span></li>
-          <li><span>16:10</span></li>
-          <li><span>16:20</span></li>
-          <li><span>16:30</span></li>
-          <li><span>16:40</span></li>
-          <li><span>16:50</span></li>
-          <li><span>17:00</span></li>
-          <li><span>17:10</span></li>
-          <li><span>17:20</span></li>
-          <li><span>17:30</span></li>
-          <li><span>17:40</span></li>
-          <li><span>17:50</span></li>
-          <li><span>18:00</span></li>
+    <div class="menu-button-container">
+      <button id="menu-button" class="menu-button" />
+    </div>
+    <div class="app-name-container">
+      <p>App Name</p>
+    </div>
+    <div class="window-controls-container">
+      <button id="minimize-button" class="minimize-button" />
+      <button id="min-max-button" class="min-max-button" />
+      <button id="close-button" class="close-button" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
         </ul>
-      </div> <!-- .cd-schedule__timeline -->
-
-      <div class="cd-schedule__events">
-        <ul>
-          <li class="cd-schedule__group">
-            <div class="cd-schedule__top-info"><span>Operatories 101</span></div>
-
-            <ul>
-              <li class="cd-schedule__event">
-                <a data-start="09:00" data-end="10:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                  <em class="cd-schedule__name">Abs Circuit</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2"
-                  href="#0">
-                  <em class="cd-schedule__name">Rowing Workout</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3" href="#0">
-                  <em class="cd-schedule__name">Yoga Level 1</em>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="cd-schedule__group">
-            <div class="cd-schedule__top-info"><span>Operatories 102</span></div>
-
-            <ul>
-              <li class="cd-schedule__event">
-                <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout" data-event="event-2"
-                  href="#0">
-                  <em class="cd-schedule__name">Rowing Workout</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="11:30" data-end="13:00" data-content="event-restorative-yoga" data-event="event-4"
-                  href="#0">
-                  <em class="cd-schedule__name">Restorative Yoga</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                  <em class="cd-schedule__name">Abs Circuit</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3" href="#0">
-                  <em class="cd-schedule__name">Yoga Level 1</em>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="cd-schedule__group">
-            <div class="cd-schedule__top-info"><span>Operatories 103</span></div>
-
-            <ul>
-              <li class="cd-schedule__event">
-                <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4"
-                  href="#0">
-                  <em class="cd-schedule__name">Restorative Yoga</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3" href="#0">
-                  <em class="cd-schedule__name">Yoga Level 1</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="12:00" data-end="13:45" data-content="event-rowing-workout" data-event="event-2"
-                  href="#0">
-                  <em class="cd-schedule__name">Rowing Workout</em>
-                </a>
-              </li>
-
-              <li class="cd-schedule__event">
-                <a data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3" href="#0">
-                  <em class="cd-schedule__name">Yoga Level 1</em>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
+    </nav>
+  </div> -->
 
-      <div class="cd-schedule-modal">
-        <header class="cd-schedule-modal__header">
-          <div class="cd-schedule-modal__content">
-            <span class="cd-schedule-modal__date"></span>
-            <h3 class="cd-schedule-modal__name"></h3>
-          </div>
+  <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+    <div class="cd-schedule__timeline">
+      <ul>
+        <li><span>09:00</span></li>
+        <li><span>09:10</span></li>
+        <li><span>09:20</span></li>
+        <li><span>09:30</span></li>
+        <li><span>09:40</span></li>
+        <li><span>09:50</span></li>
+        <li><span>10:00</span></li>
+        <li><span>10:10</span></li>
+        <li><span>10:20</span></li>
+        <li><span>10:30</span></li>
+        <li><span>10:40</span></li>
+        <li><span>10:50</span></li>
+        <li><span>11:00</span></li>
+        <li><span>11:10</span></li>
+        <li><span>11:20</span></li>
+        <li><span>11:30</span></li>
+        <li><span>11:40</span></li>
+        <li><span>11:50</span></li>
+        <li><span>12:00</span></li>
+        <li><span>12:10</span></li>
+        <li><span>12:20</span></li>
+        <li><span>12:30</span></li>
+        <li><span>12:40</span></li>
+        <li><span>12:50</span></li>
+        <li><span>13:00</span></li>
+        <li><span>13:10</span></li>
+        <li><span>13:20</span></li>
+        <li><span>13:30</span></li>
+        <li><span>13:40</span></li>
+        <li><span>13:50</span></li>
+        <li><span>14:00</span></li>
+        <li><span>14:10</span></li>
+        <li><span>14:20</span></li>
+        <li><span>14:30</span></li>
+        <li><span>14:40</span></li>
+        <li><span>14:50</span></li>
+        <li><span>15:00</span></li>
+        <li><span>15:10</span></li>
+        <li><span>15:20</span></li>
+        <li><span>15:30</span></li>
+        <li><span>15:40</span></li>
+        <li><span>15:50</span></li>
+        <li><span>16:00</span></li>
+        <li><span>16:10</span></li>
+        <li><span>16:20</span></li>
+        <li><span>16:30</span></li>
+        <li><span>16:40</span></li>
+        <li><span>16:50</span></li>
+        <li><span>17:00</span></li>
+        <li><span>17:10</span></li>
+        <li><span>17:20</span></li>
+        <li><span>17:30</span></li>
+        <li><span>17:40</span></li>
+        <li><span>17:50</span></li>
+        <li><span>18:00</span></li>
+      </ul>
+    </div> <!-- .cd-schedule__timeline -->
 
-          <div class="cd-schedule-modal__header-bg"></div>
-        </header>
+    <div class="cd-schedule__events">
+      <ul>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Operatories 101</span></div>
+          <ul>
+            <li class="cd-schedule__event">
+              <a data-start="09:00" data-end="10:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">Martin Fowler</em>
+              </a>
+            </li>
 
-        <div class="cd-schedule-modal__body">
-          <div class="cd-schedule-modal__event-info"></div>
-          <div class="cd-schedule-modal__body-bg"></div>
-        </div>
+            <li class="cd-schedule__event">
+              <a data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Grady Booch</em>
+              </a>
+            </li>
 
-        <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
-      </div>
+            <li class="cd-schedule__event">
+              <a data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3" href="#0">
+                <em class="cd-schedule__name">Jeffrey Richter</em>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Operatories 102</span></div>
 
-      <div class="cd-schedule__cover-layer"></div>
+          <ul>
+            <li class="cd-schedule__event">
+              <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Anders Hejlsberg</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="11:30" data-end="13:00" data-content="event-restorative-yoga" data-event="event-4"
+                href="#0">
+                <em class="cd-schedule__name">Andrew Troelsen</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">Adam Freeman</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3" href="#0">
+                <em class="cd-schedule__name">Joseph Albahari </em>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Operatories 103</span></div>
+
+          <ul>
+            <li class="cd-schedule__event">
+              <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4"
+                href="#0">
+                <em class="cd-schedule__name">Jolie Grant</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3" href="#0">
+                <em class="cd-schedule__name">Daniele Dawson</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="12:00" data-end="13:45" data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Robyn Martin</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3" href="#0">
+                <em class="cd-schedule__name">Arisha Thorne</em>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
     </div>
 
-    <script src="js/until.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <div class="cd-schedule-modal">
+      <header class="cd-schedule-modal__header">
+        <div class="cd-schedule-modal__content">
+          <span class="cd-schedule-modal__date"></span>
+          <h3 class="cd-schedule-modal__name"></h3>
+        </div>
+
+        <div class="cd-schedule-modal__header-bg"></div>
+      </header>
+
+      <div class="cd-schedule-modal__body">
+        <div class="cd-schedule-modal__event-info"></div>
+        <div class="cd-schedule-modal__body-bg"></div>
+      </div>
+
+      <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+    </div>
+
+    <div class="cd-schedule__cover-layer"></div>
+  </div>
+
+  <script>
+    require('./renderer.js')
+  </script>
+  <script src="js/until.js"></script>
+  <script src="js/main.js"></script>
+  <script>let $ = require('jquery');</script>
+  <script>require('popper.js');</script>
+  <script>require('bootstrap');</script>
+</body>
 
 </html>
