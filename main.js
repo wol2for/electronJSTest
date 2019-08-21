@@ -5,9 +5,9 @@ let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    //frame: false,
+    width: 1600,
+    height: 800,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -15,7 +15,7 @@ function createWindow() {
 
   mainWindow.loadFile("index.html");
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
   mainWindow.removeMenu();
 
   mainWindow.on("closed", function() {
